@@ -258,6 +258,11 @@
 <script setup>
 import { useHead } from "@unhead/vue"
 
+import project1 from "@/assets/images/1.jpeg"
+import project2 from "@/assets/images/2.jpeg"
+import project3 from "@/assets/images/3.jpeg"
+import project4 from "@/assets/images/4.jpeg"
+
 
 import {
   Trophy,
@@ -374,38 +379,32 @@ const ictProjects = [
   {
     title: "CBT Center Deployment",
     client: "FSTC",
-    image: "/src/assets/images/1.jpeg",
-    icon: MonitorCheck,
+    image: project1,
   },
   {
     title: "ICT Infrastructure Setup",
     client: "Ministry of Environment",
-    image: "/src/assets/images/2.jpeg",
-    icon: Server,
+    image: project2,
   },
   {
     title: "Software Systems Implementation",
     client: "Public Sector Institutions",
-    image: "/src/assets/images/3.jpeg",
-    icon: Code2,
+    image: project3,
   },
   {
     title: "Data Center Setup",
     client: "Government Agencies",
-    image: "/src/assets/images/4.jpeg",
-    icon: Cloud,
+    image: project4,
   },
-  {
-    title: "Networking & Connectivity",
-    client: "Educational & Government Institutions",
-    image: "/src/assets/images/5.jpeg",
-    icon: Network,
-  },
-  {
-    title: "ICT Training & Capacity Building",
-    client: "Communities & NGOs",
-    image: "/src/assets/images/6.jpeg",
-    icon: GraduationCap,
-  },
+  // {
+  //   title: "Networking & Connectivity",
+  //   client: "Educational & Government Institutions",
+  //   image: project5,
+  // },
+  // {
+  //   title: "ICT Training & Capacity Building",
+  //   client: "Communities & NGOs",
+  //   image: project6,
+  // },
 ]
 </script>

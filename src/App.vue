@@ -1,7 +1,14 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { computed } from "vue"
+import { useRoute } from "vue-router"
+
+const route = useRoute()
+
+const layout = computed(() => route.meta.layout || "default")
 </script>
 
 <template>
-  <HelloWorld />
+  <component :is="`layout-${layout}`">
+    <RouterView />
+  </component>
 </template>

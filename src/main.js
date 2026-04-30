@@ -1,5 +1,18 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from "vue"
+import { createHead } from "@unhead/vue/client"
 
-createApp(App).mount('#app')
+import App from "./App.vue"
+import router from "./router"
+import "./style.css"
+
+import DefaultLayout from "./layouts/DefaultLayout.vue"
+
+const app = createApp(App)
+const head = createHead()
+
+app.component("layout-default", DefaultLayout)
+
+app.use(router)
+app.use(head)
+
+app.mount("#app")

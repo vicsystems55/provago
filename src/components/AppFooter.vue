@@ -2,7 +2,13 @@
   <footer class="bg-provagoDark text-white">
     <div class="mx-auto grid max-w-7xl gap-8 px-6 py-12 md:grid-cols-3">
       <div>
-        <h2 class="text-2xl font-bold text-provagoRed">Provago Limited</h2>
+        <div class="flex items-center">
+  <img
+    :src="logo"
+    alt="Provago Limited"
+    class="h-20 w-auto object-contain"
+  />
+</div>
         <p class="mt-4 text-sm text-gray-300">
           Innovative IT, construction, renewable energy and development
           solutions across Nigeria.
@@ -34,3 +40,8 @@
     </div>
   </footer>
 </template>
+<script setup>
+
+import logo from "../assets/images/logo.png"
+
+</script>

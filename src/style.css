@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-white text-provagoDark font-sans;
+@layer base {
+  html {
+    font-size: 16px; /* you can bump to 17px if needed */
+  }
+
+  body {
+    @apply text-[17px] leading-relaxed text-provagoText bg-white antialiased;
+  }
+
+  p {
+    @apply leading-7 text-provagoText;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] text-provagoHeading;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold leading-snug text-provagoHeading;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold leading-snug text-provagoHeading;
+  }
+
+  h4 {
+    @apply text-xl font-medium text-provagoHeading;
+  }
+
+  a {
+    @apply text-provagoRed transition-colors duration-200;
+  }
+
+  a:hover {
+    @apply opacity-80;
+  }
+
+  button {
+    @apply transition-all duration-200;
+  }
 }

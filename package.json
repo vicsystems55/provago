@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.8",
     "@unhead/vue": "^3.1.0",
+    "lucide-vue-next": "^1.0.0",
     "vue": "^3.5.32",
     "vue-router": "^5.0.6"
   },

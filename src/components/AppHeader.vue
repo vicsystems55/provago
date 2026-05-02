@@ -19,7 +19,7 @@ const closeMenu = () => {
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 bg-white/90 shadow-sm backdrop-blur-md">
+  <header class="sticky top-0 z-30 bg-white/90 shadow-sm backdrop-blur-md">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
       <RouterLink to="/" class="flex items-center" @click="closeMenu">
         <img
@@ -58,6 +58,7 @@ const closeMenu = () => {
         <Menu class="h-6 w-6" />
       </button>
     </nav>
+  </header>
 
     <!-- Overlay -->
     <Transition
@@ -142,7 +143,6 @@ const closeMenu = () => {
         </div>
       </aside>
     </Transition>
-  </header>
 </template>
 
 <style scoped>
